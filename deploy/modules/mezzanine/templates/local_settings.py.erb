@@ -1,0 +1,24 @@
+DEBUG = True
+TIME_ZONE="Europe/Amsterdam"
+ALLOWED_HOSTS = [ "*" ]
+
+# Make these unique, and don't share it with anybody.
+SECRET_KEY = "c0e9d3a2-5912-45bd-8e1e-7548a0df35930b1672d4-0817-4fef-a61a-ae06b008ba0e3950f346-1f0b-434e-8dc3-0c615d615d9a"
+NEVERCACHE_KEY = "1e6bcc2c-d97d-4e89-a369-9fdb6e56ee4fca78ef61-549f-49a1-9800-d9739588af254e13b732-4a32-4a50-b1e3-cc4ba90e3d5b"
+
+DATABASES = {
+	"default": {
+		# Ends with "postgresql_psycopg2", "mysql", "sqlite3" or "oracle".
+		"ENGINE": "django.db.backends.sqlite3",
+		# DB name or path to database file if using sqlite3.
+		"NAME": "dev.db",
+		# Not used with sqlite3.
+		"USER": "",
+		# Not used with sqlite3.
+		"PASSWORD": "",
+		# Set to empty string for localhost. Not used with sqlite3.
+		"HOST": "",
+		# Set to empty string for default. Not used with sqlite3.
+		"PORT": "",
+	}
+}
