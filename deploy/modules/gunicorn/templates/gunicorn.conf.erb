@@ -1,5 +1,5 @@
 SERVERS=(
-	'mezzanine	127.0.0.1:8000	/home/sanoma	4	mezz.wsgi:application'
+	'<%= @project %>	127.0.0.1:8000	<%= @dir %>	4	<%= @project %>.wsgi:application'
 )
-RUN_AS='sanoma'
 
+RUN_AS='<%= @user %>'
